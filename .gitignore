@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environments
+venv/
+.env/
+.venv/
+
+# IDE / editor settings
+.vscode/
+.idea/
+
+# macOS junk
+.DS_Store
+
+# Logs
+*.log
+
+# Byte-compiled / cache
+*.egg-info/
