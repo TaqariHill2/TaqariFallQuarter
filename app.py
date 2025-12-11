@@ -8,9 +8,9 @@ app = Flask(__name__)
 @app.route('/')
 def index():
     # When the user visits the root URL, return this simple text
-    return "Hello, World!"
+    return render_template('index.html')
 
-
+# This block ensures the app runs only if this file is executed directly
 if __name__ == '__main__':
     # Start the Flask development server in debug mode
     app.run(debug=True)

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   {% block content %}
+<h1>Welcome To my Flask App!</h1>
+<p>This page was loaded from an HTML template!</p>
+<div class="card" style="width: 18rem;">
+<img src="{{ url_for( 'static', filename='images/headshot01.jpg') }}"
+class="card-img-top" alt="Profile">
+<div class="card-body">||
+<h5 class="card-title">Devon Nutting</h5> <p class="card-text">Co-Founder, CEO</p>
+<a href="#" class="btn btn-primary">View Profile</a>
+</div>
+</div>
+{% endblock %}
+{% block footer %} {% endblock %}
