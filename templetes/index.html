@@ -6,8 +6,16 @@
     <title>Turf Drip Kingz</title>
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" 
-          href="{{ url_for('static', filename='bootstrap-5.3.8-dist/css/bootstrap.min.css') }}">
+    <link
+        rel="stylesheet"
+        href="{{ url_for('static', filename='bootstrap-5.3.8-dist/css/bootstrap.min.css') }}"
+    >
+
+    <!-- Custom CSS -->
+    <link
+        rel="stylesheet"
+        href="{{ url_for('static', filename='css/style.css') }}"
+    >
 </head>
 
 <body>
@@ -18,9 +26,15 @@
 
             <a class="navbar-brand" href="#">TURF DRIP KINGZ</a>
 
-            <button class="navbar-toggler" type="button" 
-                    data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+            >
                 <span class="navbar-toggler-icon"></span>
             </button>
 
@@ -40,7 +54,12 @@
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">
+                        <a
+                            class="nav-link disabled"
+                            href="#"
+                            tabindex="-1"
+                            aria-disabled="true"
+                        >
                             CUSTOM ORDER
                         </a>
                     </li>
@@ -52,7 +71,8 @@
     </nav>
     {% endblock %}
 
-    <div class="container mt-4">
+    <main class="container mt-4">
+
         <h1 class="mb-4">Hello from the index page!</h1>
 
         <ul class="list-group mb-4">
@@ -61,12 +81,14 @@
             {% endfor %}
         </ul>
 
-        <div class="card" style="width: 18rem;">
-            <img src="{{ url_for('static', filename='images/logo.png') }}"
-                 class="card-img-top"
-                 alt="TURF DRIP KINGZ Logo">
+        <div class="card">
+            <img
+                src="{{ url_for('static', filename='images/logo.png') }}"
+                class="card-img-top"
+                alt="TURF DRIP KINGZ Logo"
+            >
 
-            <div class="card-body">
+            <div class="card-body text-center">
                 <h5 class="card-title">Welcome to TURF DRIP KINGZ</h5>
                 <p class="card-text">
                     Explore our custom drip shop for turf athletes and creators.
@@ -75,10 +97,12 @@
             </div>
         </div>
 
-    </div>
+    </main>
 
     <!-- Bootstrap JS -->
-    <script src="{{ url_for('static', filename='bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js') }}"></script>
+    <script
+        src="{{ url_for('static', filename='bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js') }}"
+    ></script>
 
 </body>
 </html>
